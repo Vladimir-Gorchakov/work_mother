@@ -192,7 +192,7 @@ def get_aquaring(sheet_from, kkt = False):
 def get_revenue(sheet_from, kkt = False):
     # Гиперпараметр для удобства смены начала чтения
     start_column = 22 + kkt
-    correction = 42 - kkt # почемуто ККТ идет до обычной штуки
+    correction = 43 - kkt # почемуто ККТ идет до обычной штуки
 
     revenue = [
         [sheet_from[f'C{start_column}'].value, 'выручка'],
