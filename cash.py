@@ -1,6 +1,5 @@
 import openpyxl
 from openpyxl.styles import Border, Side, Alignment
-from line_profiler import profile
 
 import argparse
 import datetime
