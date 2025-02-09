@@ -1,0 +1,8 @@
+*.xlsx
+
+bank/
+cash/
+
+sensetive.pkl
+
+test.py
