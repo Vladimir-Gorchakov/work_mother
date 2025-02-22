@@ -8,7 +8,7 @@ import os
 import logging
 import pickle 
 
-with open('sensetive.pkl', 'rb') as f:
+with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),'sensetive.pkl'), 'rb') as f:
     COMPANY = pickle.load(f)
 
 number_format = '_-* #,##0.00\\ _₽_-;\\-* #,##0.00\\ _₽_-;_-* "-"??\\ _₽_-;_-@_-'
