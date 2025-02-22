@@ -255,7 +255,13 @@ def new_cash(path_to_main, path_to_tavr, path_to_save, color):
 
     path_to_tavr_list = glob(os.path.join(path_to_tavr,'*.xlsx'))
 
+    for f in path_to_tavr_list:
+        if os.path.basename(f)[0] == "~":
+            raise ValueError("Закрой все xlsx файлы. Если закрыты, обратись к администратору.")
+
     temp = len(path_to_tavr_list)
+
+
     if temp:
         logging.info(f"Всего {temp} отчета найдено по кассе")
     else:
