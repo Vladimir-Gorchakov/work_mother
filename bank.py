@@ -116,6 +116,10 @@ def bank(path_to_main, path_to_bank, path_to_save):
 
     path_to_bank_list = glob(os.path.join(path_to_bank,'*.xlsx'))
 
+    for f in path_to_bank_list:
+        if os.path.basename(f)[0] == "~":
+            raise ValueError("Закрой все xlsx файлы. Если закрыты, обратись к Вовочке.")
+
     temp = len(path_to_bank_list)
     if temp:
         logging.info(f"Всего {temp} отчета найдено по банкам")

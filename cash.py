@@ -257,7 +257,7 @@ def new_cash(path_to_main, path_to_tavr, path_to_save, color):
 
     for f in path_to_tavr_list:
         if os.path.basename(f)[0] == "~":
-            raise ValueError("Закрой все xlsx файлы. Если закрыты, обратись к администратору.")
+            raise ValueError("Закрой все xlsx файлы. Если закрыты, обратись к Вовочке.")
 
     temp = len(path_to_tavr_list)
 
